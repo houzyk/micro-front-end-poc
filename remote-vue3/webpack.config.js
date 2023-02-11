@@ -49,7 +49,10 @@ module.exports = {
       name: "remote_vue3",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./RemoteVueApp": "./src/App.vue",
+        "./Wrapper": "./src/Wrapper.ts"
+      },
       shared: require("./package.json").dependencies,
     }),
     new HtmlWebPackPlugin({

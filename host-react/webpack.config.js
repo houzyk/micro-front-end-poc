@@ -44,7 +44,8 @@ module.exports = {
       name: "host_react",
       filename: "remoteEntry.js",
       remotes: {
-        remote_react: "remote_react@http://localhost:3002/remoteEntry.js"
+        remote_react: "remote_react@http://localhost:3002/remoteEntry.js",
+        remote_vue3: "remote_vue3@http://localhost:3001/remoteEntry.js"
       },
       exposes: {},
       shared: {
