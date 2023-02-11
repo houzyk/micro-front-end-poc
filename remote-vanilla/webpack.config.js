@@ -44,7 +44,9 @@ module.exports = {
       name: "remote_vanilla",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./RemoteVanillaApp": "./src/App.ts"
+      },
       shared: {
         ...deps,
       },
