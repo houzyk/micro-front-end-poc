@@ -11,4 +11,7 @@ const App = () => (
     <div>CSS: Empty CSS</div>
   </div>
 );
+
+export default App;
+
 ReactDOM.render(<App />, document.getElementById("app"));

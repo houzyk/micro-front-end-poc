@@ -44,8 +44,10 @@ module.exports = {
       name: "remote_react",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
-      shared: {
+      exposes: {
+        "./RemoteReactApp": "./src/App.tsx"
+      },
+      shared: { 
         ...deps,
         react: {
           singleton: true,
