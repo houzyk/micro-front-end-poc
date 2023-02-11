@@ -3,7 +3,6 @@
     <div>Name: remote-vue3</div>
     <div>Framework: vue3</div>
     <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
   </div>
 </template>
 
