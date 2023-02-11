@@ -1,6 +1,6 @@
 import "./index.css";
 
-document.getElementById("app").innerHTML = `
+const App = `
 <div class="container">
   <div>Name: remote-vanilla</div>
   <div>Framework: vanilla</div>
@@ -8,3 +8,12 @@ document.getElementById("app").innerHTML = `
   <div>CSS: Empty CSS</div>
 </div>
 `;
+
+const VanillaWrapper = (el: HTMLElement) => {
+  el.innerHTML = App;
+}
+
+const vanillaApp = document.getElementById('vanilla-app')
+if (vanillaApp) VanillaWrapper(vanillaApp);
+
+export default VanillaWrapper;
